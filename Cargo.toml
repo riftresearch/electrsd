@@ -10,8 +10,11 @@ edition = "2018"
 categories = ["cryptography::cryptocurrencies", "development-tools::testing"]
 
 [dependencies]
-corepc-node = { version = "0.8.0" }
-corepc-client = { version = "0.8.0" }
+# corepc-node = { version = "0.8.0" }
+# corepc-client = { version = "0.8.0" }
+corepc-node = { git = "https://github.com/riftresearch/corepc", rev = "ae028263e24da26fed31a9c32232ecdefcb1cb37" }
+corepc-client = { git = "https://github.com/riftresearch/corepc", rev = "ae028263e24da26fed31a9c32232ecdefcb1cb37" }
+
 electrum-client = { version = "0.23.1", default-features = false }
 log = { version = "0.4" }
 which = { version = "4.2.5" }
